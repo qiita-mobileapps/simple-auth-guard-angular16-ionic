@@ -1,0 +1,7 @@
+{
+  "name": "simple-auth-guard",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

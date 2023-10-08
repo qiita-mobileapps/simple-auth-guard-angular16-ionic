@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">dashboard</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button (click)="doCommand()">
+    Get Transation Datas
+  </ion-button>
+
+  <ion-button (click)="logout()">
+    Logout
+  </ion-button>
+
+  <ul>
+    <li *ngFor="let item of data$ | async">
+      {{ item.name }}
+    </li>
+  </ul>
+  
+</ion-content>
